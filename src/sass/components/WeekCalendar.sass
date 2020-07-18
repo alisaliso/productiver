@@ -1,0 +1,37 @@
+$primary: #4F63E8
+$light-primary: #EBEEFC
+$light: #F4EBE4
+
+.week
+  display: flex
+  justify-content: space-between
+  list-style: none
+  margin: 0
+  padding: 0
+
+  &-item
+    background-color: blue
+    border-radius: 6px
+    padding: 10px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 40px
+    height: 40px
+    color: $primary
+    background-color: $light-primary
+
+    &-active
+      color: white
+      background-color: $primary
+
+    &-weekend
+      background-color: $light
+
+    &-w
+      font-size: 10px
+      text-transform: uppercase
+
+    &-d
+      font-size: 20px
